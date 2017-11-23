@@ -46,3 +46,7 @@ The project is designed to search your **neighborhood location(7 cities) in Guja
 - _index.html_: HTML file that displays the map and loads all js and css
 
 - _README.md_: documentation of the project
+
+## Demo
+
+https://dstrivedi.github.io/neighborhood-map/
