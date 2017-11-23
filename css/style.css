@@ -1,1 +1,73 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
 
+#map {
+    height: 100%;
+}
+
+hr {
+    width: 250px;
+}
+
+.places {
+    padding-left: 30px;
+}
+
+#side-nav {
+    height: 100%;
+    background-color: #000;
+    opacity: 0.9;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    width: 250px;
+    display: none;
+}
+
+.nav-title {
+    font-size: 30px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.nav-item {
+    font-size: 20px;
+    list-style-type: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.search-box {
+    height: 30px;
+    width: 220px;
+    padding-left: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+header {
+    background-color: #000;
+    height: 45px;
+    color: white;
+}
+
+#open-nav {
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    padding: 10px;
+
+}
+
+#close-nav {
+    font-size: 40px;
+    color: #fff;
+    text-decoration: none;
+    padding-left: 200px;
+    cursor: pointer;
+}
