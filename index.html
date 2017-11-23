@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="Neigborhood Map Project" content="Map of Gujarat(India)">
+    <title>Neigborhood Map Application</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <header>
+        <span id="open-nav" data-bind="click: openNav">&#9776;&nbsp;&nbsp;Neighborhood Map</span>
+    </header>
+    <aside>
+        <div id="side-nav">
+            <main>
+                <span id="close-nav" data-bind="click: closeNav">&times;</span>
+                <input placeholder="Search Your Place of Interest" class="search-box" data-bind="textInput: searchTerm, valueUpdate: 'afterkeydown'">
+                <h1 class="places">Places</h1>
+                <hr>
+                <ul class="nav" data-bind="foreach: filteredLocationList">
+                    <li class="nav-item" data-bind="text: title, click: $parent.popUpMarker"></li>
+                </ul>
+            </main>
+        </div>
+    </aside>
+    <div id="map"></div>
+    <script src="js/knockout-3.4.2.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/locations.js"></script>
+    <script src="js/loc.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIGiYzDfYhvAnNel9UbVBaYIw5nFtkQe8&v=3&callback=start" onerror="googleError()"></script>
+</body>
+</html>
